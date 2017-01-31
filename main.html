@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="Jr" >
+<head>
+
+  <title>Angular</title>
+</head>
+<body ng-controller="ctrlr">
+    <table border=1>
+       <tr>
+				<td>FirstName:<input type="text" ng-model="fname"></td>
+                 <td>Middle:<input type="text" ng-model="mname"></td>
+                <td>Lastname:<input type="text" ng-model="lname"></td>
+               
+			</tr>
+			<tr>
+				 <td>Gender:<input type="text" ng-model="gender"></td>
+                <td>Date Of Birth:<input type="text" ng-model="dob"></td>
+                <td>Address:<input type="text" ng-model="addr"></td>
+                
+			</tr>
+        <tr>
+        <td>
+   <input type="button" value="Register" ng-click="insertData()"></td>
+        </tr>
+		</table><br>
+
+     <table border=1>
+       <tr>
+				<td>FirstName:<input type="text" ng-model="ufname"></td>
+				
+               
+			</tr>
+			<tr>
+				 <td>Lastname:<input type="text" ng-model="ulname"></td>
+                
+			</tr>
+        <tr>
+        <td>
+            <input type="button" value="Log-in" ng-click="checkData()">
+        
+        </tr>
+		</table>
+    <table>
+    <tr ng-repeat="aa in bb">
+			Welcome!	<td>{{aa.f}}</td><td>{{aa.l}}</td>
+    
+                
+			</tr>
+   
+</table>
+    
+
+    <br><br>
+   <input type="button" value="View Users" ng-click="loadData()">
+   <table border=9>
+       <tr>
+				
+				<td>First Name</td>
+                <td>Middle Name</td>
+                <td>last Name</td>
+                <td>Gender</td>
+                <td>Date Of Birth</td>
+                <td>Address</td>
+			</tr>
+			<tr ng-repeat="x in y">
+				<td>{{x.fn}}</td>
+                <td>{{x.mn}}</td>
+                <td>{{x.ln}}</td>
+                <td>{{x.gender}}</td>
+                <td>{{x.dob}}</td>
+                <td>{{x.addr}}</td>
+                <td><button ng-click="deleteData()">Delete</button></td>
+                <script>
+                }</script>
+
+			</tr>
+		</table>
+    
+        
+    
+     <script src="js/angular.min.js"></script>
+  <script src="js/script.js"></script>
+   
+</body>
+    
+ 
+</html>
